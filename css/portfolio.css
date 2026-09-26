@@ -1,8 +1,3 @@
-.portfolio {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-
 .portfolio-title {
   margin-bottom: 72px;
 }
@@ -91,19 +86,7 @@
 /* DESKTOP */
 
 @media screen and (min-width: 1158px) {
-  .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-
   .portfolio-card-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: flex-start;
-
-    column-gap: 24px;
     row-gap: 48px;
   }
 
