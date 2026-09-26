@@ -1,11 +1,11 @@
-# WebStudio — GoIT Markup Homework 05
+# WebStudio — GoIT Markup Homework 06
 
 Навчальний проєкт, виконаний у межах курсу **GoIT Fullstack**.
 
 ## 🔗 Посилання
 
-- **Live page:** https://ivanduik.github.io/goit-markup-hw-05/
-- **Repository:** https://github.com/Ivanduik/goit-markup-hw-05
+- **Live page:** https://ivanduik.github.io/goit-markup-hw-06/
+- **Repository:** https://github.com/Ivanduik/goit-markup-hw-06
 
 ## 🛠 Технології
 
@@ -15,6 +15,10 @@
 - SVG sprite
 - CSS transitions
 - CSS transforms
+- Responsive / Mobile First
+- Media queries
+- Retina images (`srcset`, `image-set`)
+- JavaScript mobile menu
 - HTML forms
 
 ## ✅ Реалізовано
@@ -39,7 +43,10 @@
 - кнопка закриття модального вікна;
 - backdrop для модального вікна;
 - hover/focus стани кнопок відповідно до Style Guide;
-- стилізація відповідно до макета Web Studio Version 5.1 у Figma.
+- стилізація відповідно до макета Web Studio Version 5.1 у Figma;
+- адаптивна верстка Mobile First для `320px`, `768px` та `1158px+`;
+- Retina-зображення `1x/2x` для Hero, Team та Portfolio;
+- мобільне меню з окремим `mobile-menu.js`.
 
 ## 📁 Структура стилів
 
@@ -56,4 +63,4 @@ CSS розділений на окремі файли за секціями ст
 
 ---
 
-Homework 05 — GoIT
+Homework 06 — GoIT

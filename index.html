@@ -72,6 +72,17 @@
             </li>
           </ul>
         </address>
+        <button
+          class="header-mobile-menu-open-btn"
+          type="button"
+          aria-label="Open mobile menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <svg class="header-mobile-menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -167,6 +178,10 @@
               <img
                 class="team-card-list-item-img"
                 src="./images/team/team-1.jpg"
+                srcset="
+                  ./images/team/team-1.jpg    1x,
+                  ./images/team/team-1@2x.jpg 2x
+                "
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -244,6 +259,10 @@
               <img
                 class="team-card-list-item-img"
                 src="./images/team/team-2.jpg"
+                srcset="
+                  ./images/team/team-2.jpg    1x,
+                  ./images/team/team-2@2x.jpg 2x
+                "
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -319,6 +338,10 @@
               <img
                 class="team-card-list-item-img"
                 src="./images/team/team-3.jpg"
+                srcset="
+                  ./images/team/team-3.jpg    1x,
+                  ./images/team/team-3@2x.jpg 2x
+                "
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -396,6 +419,10 @@
               <img
                 class="team-card-list-item-img"
                 src="./images/team/team-4.jpg"
+                srcset="
+                  ./images/team/team-4.jpg    1x,
+                  ./images/team/team-4@2x.jpg 2x
+                "
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -474,14 +501,18 @@
         </div>
       </section>
 
-      <section class="section" id="portfolio">
+      <section class="portfolio section" id="portfolio">
         <div class="container">
           <h2 class="section-title portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-card-list">
             <li class="portfolio-card-list-item">
               <div class="portfolio-card-list-item-img-box">
                 <img
-                  src="./images/portfolio/portfolio-1.jpg"
+                  src="./images/portfolio/portfolio.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio.jpg    1x,
+                    ./images/portfolio/portfolio@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -502,7 +533,11 @@
             <li class="portfolio-card-list-item">
               <div class="portfolio-card-list-item-img-box">
                 <img
-                  src="./images/portfolio/portfolio-2.jpg"
+                  src="./images/portfolio/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-1.jpg    1x,
+                    ./images/portfolio/portfolio-1@2x.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -523,7 +558,11 @@
             <li class="portfolio-card-list-item">
               <div class="portfolio-card-list-item-img-box">
                 <img
-                  src="./images/portfolio/portfolio-3.jpg"
+                  src="./images/portfolio/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-2.jpg    1x,
+                    ./images/portfolio/portfolio-2@2x.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -544,7 +583,11 @@
             <li class="portfolio-card-list-item">
               <div class="portfolio-card-list-item-img-box">
                 <img
-                  src="./images/portfolio/portfolio-4.jpg"
+                  src="./images/portfolio/portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-3.jpg    1x,
+                    ./images/portfolio/portfolio-3@2x.jpg 2x
+                  "
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -565,7 +608,11 @@
             <li class="portfolio-card-list-item">
               <div class="portfolio-card-list-item-img-box">
                 <img
-                  src="./images/portfolio/portfolio-5.jpg"
+                  src="./images/portfolio/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-4.jpg    1x,
+                    ./images/portfolio/portfolio-4@2x.jpg 2x
+                  "
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -586,7 +633,11 @@
             <li class="portfolio-card-list-item">
               <div class="portfolio-card-list-item-img-box">
                 <img
-                  src="./images/portfolio/portfolio-6.jpg"
+                  src="./images/portfolio/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio-5.jpg    1x,
+                    ./images/portfolio/portfolio-5@2x.jpg 2x
+                  "
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -683,6 +734,90 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <button
+        class="mobile-menu-close-btn"
+        type="button"
+        aria-label="Close mobile menu"
+      >
+        <svg class="mobile-menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-nav-list">
+          <li>
+            <a
+              class="mobile-menu-nav-link mobile-menu-nav-link-active"
+              href="#features"
+            >
+              Features
+            </a>
+          </li>
+
+          <li>
+            <a class="mobile-menu-nav-link" href="#team"> Team </a>
+          </li>
+
+          <li>
+            <a class="mobile-menu-nav-link" href="#portfolio"> Portfolio </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu-bottom">
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-address-list">
+            <li>
+              <a class="mobile-menu-phone" href="tel:+110001111111">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+
+            <li>
+              <a class="mobile-menu-email" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-menu-social-list">
+          <li>
+            <a class="mobile-menu-social-link" href="#">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="mobile-menu-social-link" href="#">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="mobile-menu-social-link" href="#">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="mobile-menu-social-link" href="#">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div id="modal" class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button" aria-label="Close modal">
@@ -811,5 +946,7 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/mobile-menu.js" defer></script>
   </body>
 </html>

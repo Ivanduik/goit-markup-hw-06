@@ -1,28 +1,43 @@
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .portfolio-title {
   margin-bottom: 72px;
 }
 
 .portfolio-card-list {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
 
 .portfolio-card-list-item {
-  width: calc((100% - 48px) / 3);
+  width: 288px;
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio-card-list-item:hover {
   box-shadow:
-    0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    0 2px 1px rgba(46, 47, 66, 0.08),
+    0 1px 1px rgba(46, 47, 66, 0.16),
+    0 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .portfolio-card-list-item-img-box {
   position: relative;
   overflow: hidden;
 }
+
+.portfolio-card-list-item-img-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .portfolio-card-list-item-overlay {
   position: absolute;
   top: 0;
@@ -42,14 +57,57 @@
 .portfolio-card-list-item:hover .portfolio-card-list-item-overlay {
   transform: translateY(0);
 }
+
 .portfolio-card-list-item-title {
   margin-bottom: 8px;
 }
 
 .portfolio-card-list-item-content {
-  padding: 32px 16px;
+  padding: 32px 16px 31px;
 
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .portfolio-card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-card-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1158px) {
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .portfolio-card-list-item {
+    width: calc((100% - 48px) / 3);
+  }
 }
